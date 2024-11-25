@@ -1,0 +1,435 @@
+*
+body{background-color:black;}
+*
+{
+  margin: 5px 0;
+  padding: 0 5px;
+  box-sizing:border-box;
+  font-style: "oblique";
+}
+body
+{
+    color:white;
+}
+.header
+{
+    position:middle;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+.logo{
+    position:relative;
+    font-size:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+.navbar a {
+    display:inline-block;
+    font-size:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:35px;
+    transition:.3s;
+}
+.navbar a:hover{
+    color:goldenrod;
+}
+.Home {
+    background-color: black;
+    padding: 50px 20px; 
+    text-align: left; 
+    color: white; 
+}
+.float-right {
+    float: right;
+}
+.name {
+    font-size: 60px; 
+    font-weight: bold; 
+    color: goldenrod;
+}
+.change {
+    color: white; 
+}
+.hello{
+    margin-bottom: 20px;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: goldenrod; 
+}
+.e{
+    font-size: 40px; 
+    font-weight: bold; 
+    color: white; 
+}
+.more-about-me-oval {
+    color: white; 
+    background-color: black; 
+    padding: 15px 30px; 
+    border: 2px solid whitesmoke;
+    border-radius: 50px; 
+    display: inline-block; 
+    margin-top: 20px; 
+}
+.more-about-me-oval:hover {
+    color: #fff; /* White text color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+h1 {
+    margin-bottom: 20px; 
+}
+.e {
+    margin-bottom: 20px; 
+}
+h1 {
+    font-size:40px;
+}
+.typing-effect {
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 40px; /* Adjust font size as needed */
+    width: 15ch; /* Adjust for the longest word/phrase */
+    animation: typing 3s steps(20) infinite, blink 0.5s step-end infinite;
+}
+@keyframes typing {
+    0%, 50% {
+        width: 7ch; /* Length of "Engineer" */
+    }
+    50%, 100% {
+        width: 24ch; /* Length of "Web Developer" */
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.about-content {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Add spacing between lines */
+    color: white; /* Optional: Adjust text color */
+}
+
+.about-content ul {
+    font-size: 20px; /* Optional: Separate font size for the list */
+    margin-left: 20px; /* Add left margin for better alignment */
+}
+
+.about-content .highlight-link {
+    color: #007BFF; /* Highlight link color */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.about-content {
+    font-size: 20px; /* Set a comfortable font size */
+    line-height: 1.6; /* Add spacing between lines */
+    color: white; /* Optional: Text color */
+}
+
+.about-content p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+}
+/* Container for the about section */
+.about-content {
+    display: flex; /* Align items horizontally */
+    gap: 50px; /* Add space between left and right sides */
+    margin-top: 20px; /* Optional: space above the container */
+}
+
+/* Left side styling */
+.left-side {
+    flex: 1; /* Allow the left side to take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left; /* Center-align image and text */
+    text-align: left; /* Center-align text */
+}
+
+
+/* Right side styling */
+.right-side {
+    flex: 2; /* Allow the right side to take up more space */
+    font-size: 20px; /* Set font size */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: white; /* Text color */
+}
+
+
+/* Styling for the content in right side */
+.right-side p {
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
+
+    .left-side,
+    .right-side {
+        flex: 1; /* Make both sides take equal space on small screens */
+    }
+}
+/* Oval-shaped link styling */
+.oval-link {
+    display: inline-block; /* Make the link behave like a block, but inline */
+    padding: 12px 30px; /* Add padding inside the box */
+    border: 2px solid ; /* Border color */
+    background-color: goldenrod; /* Light blue background color */
+    color: black; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    border-radius: 50px; /* Fully rounded edges for oval shape */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the oval box */
+.oval-link:hover {
+    color: #fff; /* White text color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.skills-content {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Add spacing between lines */
+    color: white; /* Optional: Adjust text color */
+}
+
+.skills-content ul {
+    font-size: 20px; /* Optional: Separate font size for the list */
+    margin-left: 20px; /* Add left margin for better alignment */
+}
+.project-content {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Add spacing between lines */
+    color: white; /* Optional: Adjust text color */
+}
+
+.project-content ul {
+    font-size: 20px; /* Optional: Separate font size for the list */
+    margin-left: 20px; /* Add left margin for better alignment */
+}
+.contact-content {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Add spacing between lines */
+    color: white; /* Optional: Adjust text color */
+}
+
+.contact-content ul {
+    font-size: 20px; /* Optional: Separate font size for the list */
+    margin-left: 20px; /* Add left margin for better alignment */
+}
+/* Center using Grid */
+#Skills, #Projects, #Contact {
+    display: grid;
+    place-items: center; /* This centers content both horizontally and vertically */
+    height: 100vh; /* Ensures the section takes up full viewport height */
+}
+/* Fixed footer at the bottom */
+.footer {
+    position: center ;
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Take full width of the page */
+    background-color: black;
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Vertical padding */
+    z-index: 1000; /* Make sure it stays on top of other content */
+}
+
+    .move-image {
+        transform: translateX(10px); /* Moves the image 20px to the left */
+    }
+    img {
+        transform: translateX(-140px);
+    }
+    .center {
+        text-align: center; /* Centers the link horizontally */
+    }
+ .social-icons{
+    display: flex;
+ }   
+ #contact {
+    padding: 20px;
+    background-color: black;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.contact-info h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item strong {
+    font-weight: bold;
+}
+
+.info-item p {
+    margin: 5px 0;
+}
+
+a {
+    color: white; /* Set link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.projects-completed {
+    text-align: center; /* Centers the text */
+    margin-bottom: 20px; /* Adds space below the text */
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Makes the text bold */
+    color: white; /* You can change the color */
+}
+/* Center the entire contact section */
+#contact {
+    text-align: center; /* Centers the text */
+    padding: 50px 20px;
+}
+/* Center the entire contact section */
+#contact {
+    text-align: center; /* Centers the text */
+    padding: 50px 20px;
+}
+
+/* Center the entire contact section */
+#contact {
+    text-align: center; /* Centers the text */
+    padding: 50px 20px;
+}
+/* Center the entire contact section */
+#contact {
+    text-align: center; /* Centers the text */
+    padding: 50px 20px;
+}
+
+/* Contact info styling */
+.contact-info {
+    display: flex; /* Flexbox to arrange items horizontally */
+    justify-content: center; /* Centers the items horizontally within the container */
+    gap: 30px; /* Adds space between each info item */
+    flex-wrap: wrap; /* Allows the items to wrap if there's not enough space */
+    margin-top: 20px; /* Adds space above the info section */
+}
+
+/* Styling each info item */
+.info-item {
+    text-align: center;
+}
+
+.info-item strong {
+    font-size: 16px;
+    font-weight: bold;
+    display: block; /* Makes the label appear on a new line */
+    margin-bottom: 5px; /* Adds space below the label */
+}
+
+.info-item p {
+    font-size: 14px;
+}
+
+.info-item a {
+    text-decoration: none;
+    color: inherit; /* Keeps the link color the same as the text color */
+}
+.highlight {
+    color: goldenrod; 
+}
+
+.contact-info {
+    font-size: 30px; /* Adjust this value for the text size */
+    line-height: 1.6; /* Adjust spacing between lines */
+}
+.b{
+    font-size: 20px;   
+}
+
+/* Styling for the icons themselves */
+.social-icons a {
+    text-align: center;
+    margin: 0 10px; /* Space between the icons */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+.social-icons a {
+    display: inline-flex; /* Aligns content inside circular shape */
+    justify-content: center; /* Center icon inside circle horizontally */
+    align-items: center; /* Center icon inside circle vertically */
+    margin: 0 10px; /* Space between each icon */
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height (same as width for perfect circle) */
+    background-color: #333; /* Light gray background */
+    border-radius: 50%; /* Make the shape circular */
+    color: goldenrod; /* Icon color */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for the icons */
+.social-icons a:hover {
+    color: white; /* Change color on hover */
+}
+.Home-sci a {
+    margin: 0 10px; /* Space between the icons */
+    font-size: 24px; /* Adjust icon size */
+    color: goldenrod; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s;
+}
+.Home-sci a:hover {
+    color: white;
+}
+.social-title {
+    text-align: center; /* Center the text */
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 15px; /* Add space between the title and icons */
+    color: whitesmoke; /* Adjust the text color */
+}
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Add space between icons */
+}
+#Contact h1 {
+    margin-bottom: 5px !important; /* Force smaller space below "Contact Me" */
+}
+
+.contact-info {
+    margin-top: 0 !important; /* Force smaller space above the details */
+    padding-top: 0 !important; /* Remove padding if any */
+}
+
